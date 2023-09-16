@@ -1,8 +1,6 @@
-# React + Vite
+Course Registration Website using REACT 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h1> Features Of this Project</h1>
+1 Reduce Duplicate:  One Course can't be selected twice, If someone try to register one course more than one time, it will show a Alert
+2 Limited Credit Hour: None can select course more than 7 hour credit hour.
+3 Instead of browser default alert, this project have used [@Sweet Alert](https://sweetalert2.github.io/)

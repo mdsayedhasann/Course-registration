@@ -25,9 +25,9 @@ function App() {
     if((creditHour - course.credit_hour) < 0){
       return Swal.fire({
         title: 'Error!',
-        text: 'Do you want to continue',
+        text: 'You can not select course more than 7hr',
         icon: 'error',
-        confirmButtonText: 'Cool'
+        confirmButtonText: 'Go Back'
       })
     }
     setCreditHour(creditHour - course.credit_hour)

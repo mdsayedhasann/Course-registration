@@ -14,7 +14,11 @@ function App() {
     
     const newCourse = [...selectedCourses, course];
 
-    
+    for(const newlySelectedCourse of selectedCourses){
+      if(newlySelectedCourse.id === course.id){
+        return alert('Mair dimu duibar select korle')
+      }
+    }
 
     let totalCredit = parseFloat(course.credit_hour);
 

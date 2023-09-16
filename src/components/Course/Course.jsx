@@ -11,7 +11,7 @@ const Course = ({course, handleSelectButton}) => {
                     <p>Price: {price}</p>
                     <p>Credit: {credit_hour}hr</p>
                 </div>
-                <button onClick={() => handleSelectButton()} className="bg-[#2F80ED] text-center text-white py-1 w-full rounded-md" >Select</button>
+                <button onClick={() => handleSelectButton(course)} className="bg-[#2F80ED] text-center text-white py-1 w-full rounded-md" >Select</button>
             </div>
         </div>
     );

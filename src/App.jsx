@@ -4,8 +4,9 @@ import Header from './components/Header/Header'
 
 function App() {
 
-  const handleSelectButton = () => {
-    console.log('Course Selected');
+  const handleSelectButton = (course) => {
+    const {course_title, price, credit_hour} = course;
+    console.log(`${course_title} which price is ${price} and Credit Hour: ${credit_hour}` );
   }
 
   return (

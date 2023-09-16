@@ -3,7 +3,7 @@
 import React from "react";
 import Selected_Course from "../Selected_Course/Selected_Course";
 
-const Selected_Courses = ({ selectedCourses, handleSelectButton, creditHour, totalHour}) => {
+const Selected_Courses = ({ selectedCourses, creditHour, totalHour}) => {
 
   return (
     <div>

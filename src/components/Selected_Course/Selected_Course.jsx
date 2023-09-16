@@ -4,9 +4,7 @@
 const Selected_Course = ({selectedCourse}) => {
     const {course_title} = selectedCourse; 
     return (
-
         <li className='py-1'> {course_title} </li>
-
     );
 };
 

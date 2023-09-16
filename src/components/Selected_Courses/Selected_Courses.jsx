@@ -3,24 +3,21 @@
 import React from "react";
 import Selected_Course from "../Selected_Course/Selected_Course";
 
-const Selected_Courses = ({ selectedCourses }) => {
+const Selected_Courses = ({ selectedCourses, handleSelectButton, creditHour, totalHour}) => {
+
   return (
     <div>
       <div>
         <h3 className="text-[#2F80ED] text-left text-sm font-semibold py-3">
-          Credit Hour Remaining 7 hr
+          Credit Hour Remaining {creditHour} hr
         </h3>
         <hr></hr>
 
         <h3 className="text-black text-left font-extrabold text-sm font-semibold py-3">
-          Course Name : {selectedCourses.length}
+          Course Name
         </h3>
 
         <ol className="text-left text-sm  text-[#6B6A67] pb-3" type="A">
-          {/* {selectedCourses.map(selectedCourse => (
-            <selectedCourse key={selectedCourse.id} selectedCourse={selectedCourse}
-            ></selectedCourse>
-          ))} */}
           {
               selectedCourses.map(selectedCourse => <Selected_Course key={selectedCourse.id} selectedCourse={selectedCourse}></Selected_Course>)
           }
@@ -29,14 +26,14 @@ const Selected_Courses = ({ selectedCourses }) => {
         <hr></hr>
 
         <h3 className="text-[#575654] text-left font-extrabold text-sm font-semibold py-3">
-          Total Credit Hour : 13
+          Total Credit Hour : {totalHour}
         </h3>
         <hr></hr>
 
-        <h3 className="text-[#575654] text-left font-extrabold text-sm font-semibold py-3">
+        {/* <h3 className="text-[#575654] text-left font-extrabold text-sm font-semibold py-3">
           Total Price : 48000 USD
         </h3>
-        <hr></hr>
+        <hr></hr> */}
       </div>
     </div>
   );

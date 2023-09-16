@@ -7,7 +7,7 @@ import Swal from 'sweetalert2'
 
 function App() {
   const [selectedCourses, SetSetCourses] = useState([]);
-  const [creditHour, setCreditHour] = useState(7);
+  const [creditHour, setCreditHour] = useState(20);
   const [totalHour, setTotalHour] = useState(0);
 
   const handleSelectButton = (course) => {
@@ -16,7 +16,13 @@ function App() {
 
     for(const newlySelectedCourse of selectedCourses){
       if(newlySelectedCourse.id === course.id){
-        return alert('Mair dimu duibar select korle')
+
+        // return alert('Mair dimu duibar select korle')
+        return Swal.fire({
+          icon: 'error',
+          title: 'Sorry...',
+          text: "You already selected this course",
+        })
       }
     }
 
@@ -25,7 +31,7 @@ function App() {
     if((creditHour - course.credit_hour) < 0){
       return Swal.fire({
         title: 'Error!',
-        text: 'You can not select course more than 7hr',
+        text: 'You can not select course more than 20hr',
         icon: 'error',
         confirmButtonText: 'Go Back'
       })

@@ -1,0 +1,75 @@
+[
+    {
+      "id": "1",
+      "image": "course1.jpg",
+      "course_title": "Introduction to Programming",
+      "course_description": "Learn the basics of programming in this introductory course.",
+      "price": "$99.99",
+      "credit_hour": "3"
+    },
+    {
+      "id": "2",
+      "image": "course2.jpg",
+      "course_title": "Web Development Fundamentals",
+      "course_description": "Explore the fundamentals of web development.",
+      "price": "$129.99",
+      "credit_hour": "4"
+    },
+    {
+      "id": "3",
+      "image": "course3.jpg",
+      "course_title": "Data Science Essentials",
+      "course_description": "Discover the essentials of data science and analysis.",
+      "price": "$149.99",
+      "credit_hour": "5"
+    },
+    {
+      "id": "4",
+      "image": "course4.jpg",
+      "course_title": "Graphic Design Basics",
+      "course_description": "Learn the basics of graphic design and image editing.",
+      "price": "$79.99",
+      "credit_hour": "2"
+    },
+    {
+      "id": "5",
+      "image": "course5.jpg",
+      "course_title": "Digital Marketing Strategies",
+      "course_description": "Explore effective digital marketing strategies and techniques.",
+      "price": "$119.99",
+      "credit_hour": "4"
+    },
+    {
+      "id": "6",
+      "image": "course6.jpg",
+      "course_title": "Introduction to Finance",
+      "course_description": "Get an introduction to financial concepts and principles.",
+      "price": "$89.99",
+      "credit_hour": "3"
+    },
+    {
+      "id": "7",
+      "image": "course7.jpg",
+      "course_title": "Photography Basics",
+      "course_description": "Learn the basics of photography, composition, and camera use.",
+      "price": "$69.99",
+      "credit_hour": "2"
+    },
+    {
+      "id": "8",
+      "image": "course8.jpg",
+      "course_title": "Artificial Intelligence",
+      "course_description": "Explore the fundamentals of artificial intelligence and machine learning.",
+      "price": "$159.99",
+      "credit_hour": "6"
+    },
+    {
+      "id": "9",
+      "image": "course9.jpg",
+      "course_title": "Business Communication Skills",
+      "course_description": "Enhance your communication skills for business and professional success.",
+      "price": "$109.99",
+      "credit_hour": "3"
+    }
+  ]
+  

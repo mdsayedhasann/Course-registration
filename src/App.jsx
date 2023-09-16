@@ -1,13 +1,17 @@
+import { useState } from 'react';
 import './App.css'
 import Courses from './components/Courses/Courses'
 import Header from './components/Header/Header'
-import Selected_Course from './components/Selected_Course/Selected_Course';
+import Selected_Courses from './components/Selected_Courses/Selected_Courses';
 
 function App() {
 
+  const [selectedCourses, SetSetCourses] = useState([])
   const handleSelectButton = (course) => {
-    const {course_title, price, credit_hour} = course;
-    console.log(`${course_title} which price is ${price} and Credit Hour: ${credit_hour}` );
+    const newCourse = [...selectedCourses, course]
+    
+    SetSetCourses(newCourse)
+    console.log(SetSetCourses);
   }
 
   return (
@@ -22,7 +26,7 @@ function App() {
           <Courses handleSelectButton={handleSelectButton}></Courses>
         </div>
         <div className="w-[23%]  p-4 rounded-md bg-white p-3 mt-4">
-        <Selected_Course></Selected_Course>  
+        <Selected_Courses selectedCourses={selectedCourses}></Selected_Courses>  
         </div>
       </div>
     </main>
